@@ -1,2 +1,2 @@
-# acwing_python
-AcWing算法基础课的python解决方案
+# acwing_solution
+AcWing算法基础课的解决方案，包含python和C++

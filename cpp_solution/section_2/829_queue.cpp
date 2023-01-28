@@ -5,34 +5,33 @@ using namespace std;
 
 const int N = 100010;
 
-int stk[N], tt = -1;
+int que[N], hh = 0, tt = -1;
 
 int main() {
     int m;
-    string s;
     cin >> m;
     while (m --) {
+        string s;
         cin >> s;
         if (s == "push") {
             int x;
             cin >> x;
-            stk[++tt] = x;
+            que[++tt] = x;
         }
         else if (s == "pop") {
-            tt --;
+            hh ++;
         }
         else if (s == "empty") {
-            if (tt == -1) {
-                printf("YES\n");
+            if (hh > tt) {
+                cout << "YES" << endl;
             }
             else {
-                printf("NO\n");
+                cout << "NO" << endl;
             }
         }
         else {
-            printf("%d\n", stk[tt]);
+            cout << que[hh] << endl;
         }
     }
-
     return 0;
 }

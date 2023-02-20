@@ -36,4 +36,6 @@ int main() {
         h[1] = h[Size--];
         down(1);
     }
+
+    return 0;
 }
